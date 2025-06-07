@@ -194,3 +194,92 @@ nav ul li a:hover::after {
 .social-icons a:hover {
   color: #f5a663;
 }
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px 5%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .header-text {
+    margin-top: 30%;
+    font-size: 22px;
+  }
+
+  .header-text h1 {
+    font-size: 36px;
+  }
+
+  #About .row {
+    flex-direction: column;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .sub-title h1 {
+    font-size: 36px;
+  }
+
+  .about-col-2 p,
+  .interests,
+  .hobbies {
+    font-size: 16px;
+  }
+
+  .contact-left p {
+    font-size: 18px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text {
+    margin-top: 35%;
+    font-size: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .about-col-2 p,
+  .interests,
+  .hobbies {
+    font-size: 15px;
+  }
+
+  .contact-left p {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+}
