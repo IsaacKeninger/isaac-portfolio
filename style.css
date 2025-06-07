@@ -252,8 +252,8 @@ nav ul li a:hover::after {
 
 @media (max-width: 480px) {
   .header-text {
-    margin-top: 35%;
-    font-size: 18px;
+    margin-top: 50%;
+    font-size: 22px;
   }
 
   .header-text h1 {
