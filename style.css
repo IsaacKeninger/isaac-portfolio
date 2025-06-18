@@ -195,6 +195,61 @@ nav ul li a:hover::after {
   color: #f5a663;
 }
 
+.visitor-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ececec; 
+  padding: 10px 50px;
+  margin-top: 20px;
+  border-top: 5px solid #ddd;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.visitor-text {
+  flex: 1;
+  margin-top: 50px;
+  max-width: 1000px;
+  font-size: 30px;
+  color: #333;
+  font: 'Franklin Gothic Medium';
+}
+
+#visitor-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  background-color: white;
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  margin-right: 200px;
+}
+
+#visitorCount {
+  font-size: 3rem;  
+  font-weight: bold;
+  color: #222;
+}
+
+#visitor-container i.fab.fa-aws {
+  font-size: 3.5rem; 
+  color: #FF9900;
+  margin-top: 10px;
+  margin-left: 2.5px;
+}
+
+#visitor-container .visitor-label {
+  font-size: 1.8rem;  
+  font-weight: 600
+}
+
+
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
   .container {
@@ -285,6 +340,7 @@ nav ul li a:hover::after {
     margin-right: 12px;
   }
 }
+
 
 @media (max-width: 768px) {
   .header-text {

@@ -83,13 +83,47 @@
           <div class="social-icons">
             <a href="https://www.instagram.com/isaac.keninger/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/isaac-keninger-363a6b233/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/isaackeninger" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>          
+            <a href="https://github.com/isaackeninger" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>          
             </div>
         </div>
         <div class="contact-right"></div>
       </div>
     </div>
+  <!-- This is an AWS Cloud integration call using API Gateway, Lambda, and Dynamo DB. Documentation on Github -->
+  <div class="visitor-wrapper">
+    <div class="visitor-text">
+      <p>
+        Using AWS Tools, I have included a total visitor count for this site. Using API Gateway, I generated an API
+        Call to a Lambda Function which then stores the visitor count in a DynamoDB table. (Documentaion on <a href=https://github.com/IsaacKeninger/isaac-portfolio target="_blank" rel="noopener noreferrer" >Github</a>)
+      </p>
+    </div>
+    <div id="visitor-container">
+      <i class="fab fa-aws"></i>
+      <span class="visitor-label">Total Visits:</span>
+      <span id="visitorCount">Loading...</span>
+    </div>
   </div>
+
+
+    <!-- There is a 2 second delay added. This is to prevent the count from increasing immediatly with every refresh.-->
+  <script>
+    setTimeout(() => {
+      fetch('https://t1o11wvaud.execute-api.us-east-2.amazonaws.com')
+        .then(response => response.text())
+        .then(count => {
+          document.getElementById('visitorCount').innerText = count;
+        })
+        .catch(err => {
+          console.error('Error fetching visitor count:', err);
+          document.getElementById('visitorCount').innerText = 'Error';
+        });
+    }, 2000); 
+
+</script>
+  </div>
+
+
+
 
 </body>
 </html>
