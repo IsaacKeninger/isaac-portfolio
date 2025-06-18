@@ -21,8 +21,30 @@ Services used:
   - **Dynamo DB**
         This stores the visitor count in a DynamoDB table.
 
-This entire integration demonstrates the use of simple services for a serverless architecture to be embedded on the site.\
+This entire integration demonstrates the use of simple services for a serverless architecture to be embedded on the site.
 
+## Lambda Function
+
+The Lambda function (`visitorCounter.py`) performs the following:
+
+- On GET: fetches current count from DynamoDB.
+- On UPDATE: increments and saves the count back.
+
+## API Gateway
+
+Configured to route HTTP GET requests to the Lambda function securely.
+
+## DynamoDB
+
+A single table with:
+- Primary key: `siteId`
+- Attribute: `visitorCount` (Number)
+
+---
+
+### Usage
+
+The frontend calls this API with a delay to avoid false increments on every refresh.
 
 ## Deployment
 
