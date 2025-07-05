@@ -110,7 +110,6 @@ nav ul li a:hover::after {
   flex-basis: 35%;
 }
 
-
 .about-col-1 img {
   width: 100%;
   height: auto;
@@ -161,7 +160,7 @@ nav ul li a:hover::after {
 
 /* Contact Section */
 #contact {
-  padding: 60px 0;
+  padding: 20px 0;
   background-color: #ececec;
 }
 
@@ -200,8 +199,8 @@ nav ul li a:hover::after {
   justify-content: space-between;
   align-items: center;
   background-color: #ececec; 
-  padding: 10px 50px;
-  margin-top: 20px;
+  padding: 20px 50px;
+  margin-top: 10px;
   border-top: 5px solid #ddd;
   gap: 40px;
   flex-wrap: wrap;
@@ -209,11 +208,12 @@ nav ul li a:hover::after {
 
 .visitor-text {
   flex: 1;
-  margin-top: 50px;
   max-width: 1000px;
   font-size: 30px;
   color: #333;
-  font: 'Franklin Gothic Medium';
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  margin-top: 0;
+  line-height: 1.3;
 }
 
 #visitor-container {
@@ -228,13 +228,13 @@ nav ul li a:hover::after {
   font-size: 1.1rem;
   color: #333;
   white-space: nowrap;
-  margin-right: 200px;
+  margin-right: 0;
 }
 
 #visitorCount {
-  font-size: 3rem;  
-  font-weight: bold;
-  color: #222;
+  font-size: 4rem;       
+  font-weight: 700;    
+  color: #222;         
 }
 
 #visitor-container i.fab.fa-aws {
@@ -246,9 +246,8 @@ nav ul li a:hover::after {
 
 #visitor-container .visitor-label {
   font-size: 1.8rem;  
-  font-weight: 600
+  font-weight: 600;
 }
-
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
@@ -303,6 +302,22 @@ nav ul li a:hover::after {
     font-size: 24px;
     margin-right: 15px;
   }
+
+  .visitor-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  #visitor-container {
+    margin-right: 0;
+  }
+
+  .visitor-text {
+    margin-top: 0;
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -310,8 +325,6 @@ nav ul li a:hover::after {
     margin-top: 35%;
     font-size: 18px;
   }
-  
-
 
   .header-text h1 {
     font-size: 28px;
@@ -339,27 +352,8 @@ nav ul li a:hover::after {
     font-size: 20px;
     margin-right: 12px;
   }
-}
-
-
-@media (max-width: 768px) {
-  .header-text {
-    margin-top: 50vh; /* moves it 50% down the screen */
-    font-size: 48px;
-  }
-
-  .header-text h1 {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-text {
-    margin-top: 60%; /* even further down */
-    font-size: 18px;
-  }
-
-  .header-text h1 {
-    font-size: 28px;
+  
+  .visitor-text {
+    font-size: 20px;
   }
 }
