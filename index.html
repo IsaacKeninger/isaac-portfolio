@@ -78,13 +78,10 @@
         <div class="contact-right"></div>
       </div>
     </div>
+  </div>
+
   <!-- This is an AWS Cloud integration call using API Gateway, Lambda, and Dynamo DB. Documentation on Github -->
   <div class="visitor-wrapper">
-    <div class="visitor-text">
-      <p>
-        AWS Powered Total Visitor Count (Documentation on Github</a>)
-      </p>
-   <div class="visitor-wrapper">
     <div class="visitor-content">
       <div class="visitor-title">
         AWS Cloud Integration
@@ -96,11 +93,12 @@
       </div>
     </div>
   </div>
+
   <div id="footer">
     &copy; 2025 Isaac Keninger. All rights reserved.
   </div>
 
-    <!-- There is a 2 second delay added. This is to prevent the count from increasing immediatly with every refresh.-->
+  <!-- There is a 2 second delay added. This is to prevent the count from increasing immediately with every refresh.-->
   <script>
     setTimeout(() => {
       fetch('https://t1o11wvaud.execute-api.us-east-2.amazonaws.com')
@@ -112,10 +110,8 @@
           console.error('Error fetching visitor count:', err);
           document.getElementById('visitorCount').innerText = 'Error';
         });
-    }, 2000); 
-
-</script>
-  </div>
+    }, 2000);
+  </script>
 
 
 
