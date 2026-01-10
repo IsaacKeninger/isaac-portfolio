@@ -116,23 +116,29 @@ nav ul li a:hover::after {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  align-items: flex-start;
 }
 
 .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 25%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 15px;
+  align-self: flex-start;
 }
 
 .about-col-1 img {
   width: 100%;
-  height: auto;
-  border-radius: 50px;
+  max-height: calc((100% - 15px) / 2);
+  object-fit: cover;
+  border-radius: 30px;
+  flex: 1;
 }
 
 .about-col-2 {
-  flex-basis: 60%;
+  flex-basis: 70%;
 }
 
 .about-col-2 p {
@@ -175,7 +181,7 @@ nav ul li a:hover::after {
 
 /* Projects Section */
 #projects {
-  padding: 50px 0 80px 0;
+  padding: 30px 0 40px 0;
   background-color: #f5a663;
   width: 100%;
   max-width: 100%;
@@ -184,11 +190,12 @@ nav ul li a:hover::after {
 
 #projects .sub-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #projects .sub-title h1 {
   color: #487011;
+  font-size: 36px;
 }
 
 .projects {
@@ -200,63 +207,65 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .project-text {
-  flex-basis: 45%;
+  flex-basis: 48%;
   color: #363333;
 }
 
 .project-text h1 {
-  font-size: 48px;
+  font-size: 32px;
   color: #487011;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .project-text h2 {
-  font-size: 28px;
+  font-size: 18px;
   color: #363333;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .project-text p {
-  font-size: 18px;
-  margin-bottom: 15px;
-  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .project-text .tech-label {
   font-weight: 600;
   color: #487011;
-  margin-bottom: 8px;
-  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .project-text .tech-stack {
   font-style: italic;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .project-text .project-description {
-  margin-bottom: 25px;
-  line-height: 1.8;
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 .github-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
+  gap: 6px;
+  padding: 8px 16px;
   background-color: #487011;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 600;
+  font-size: 14px;
   transition: all 0.3s ease;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .github-link:hover {
@@ -266,11 +275,11 @@ nav ul li a:hover::after {
 }
 
 .github-link i {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .project-image {
-  flex-basis: 50%;
+  flex-basis: 48%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,7 +288,7 @@ nav ul li a:hover::after {
 .project-image img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
   object-fit: contain;
   max-width: 100%;
 }
