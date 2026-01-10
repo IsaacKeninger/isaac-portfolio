@@ -191,12 +191,57 @@ nav ul li a:hover::after {
   color: #487011;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  flex-basis: 45%;
+  color: #363333;
+}
+
+.project-text h1 {
+  font-size: 48px;
+  color: #487011;
+  margin-bottom: 10px;
+}
+
+.project-text h2 {
+  font-size: 28px;
+  color: #363333;
+  margin-bottom: 20px;
+}
+
+.project-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project-image {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+  object-fit: contain;
+  max-width: 100%;
+}
+
 
 /* Contact Section */
 #contact {
@@ -440,6 +485,27 @@ html {
   .about-col-2 p,
   .interests,
   .hobbies {
+    font-size: 16px;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-text,
+  .project-image {
+    flex-basis: 100%;
+  }
+
+  .project-text h1 {
+    font-size: 36px;
+  }
+
+  .project-text h2 {
+    font-size: 22px;
+  }
+
+  .project-text p {
     font-size: 16px;
   }
 
