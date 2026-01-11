@@ -1,0 +1,32 @@
+[33m565c931[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit: try and fix mistakes
+[33me2ef42a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33me2ef42a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: checkout: moving from 7c0ef5e6fd9200db21bca9439036da6189395bc6 to main
+[33m7c0ef5e[m HEAD@{3}: commit: drake link
+[33m309e839[m HEAD@{4}: commit: vertical stylign
+[33m6c180e3[m HEAD@{5}: commit: spacing of contact me
+[33mcb706d3[m HEAD@{6}: commit: more images and styleing, gnome
+[33ma481ea9[m HEAD@{7}: reset: moving to a481ea9bb5442a8d3466b8373f3d0cdc33a72ad5
+[33ma9eea71[m HEAD@{8}: commit: tried styling updates
+[33ma481ea9[m HEAD@{9}: commit: add task tracker
+[33m0b9d13f[m HEAD@{10}: commit: CityScapes project added
+[33m7c07d2e[m HEAD@{11}: commit: update about me
+[33mc9380c9[m HEAD@{12}: reset: moving to c9380c9
+[33me2ef42a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{13}: checkout: moving from main to e2ef42a37ac3341f6fa42772445a02b3e4efb758
+[33me2ef42a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{14}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33mc9380c9[m HEAD@{15}: commit: update style
+[33m239cb91[m HEAD@{16}: reset: moving to 239cb91a7cbb6244c7f50adbcf57a217f9f04c9f
+[33m239cb91[m HEAD@{17}: commit: Update Style
+[33mcdbc9d9[m HEAD@{18}: commit: Formatting/Visual Updates
+[33m0c7a6c5[m HEAD@{19}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33m7c48871[m HEAD@{20}: commit: Integrate AWS
+[33me20e35e[m HEAD@{21}: commit: Media Formatting
+[33m446cda0[m HEAD@{22}: commit: Update Media Style
+[33m8fb7fec[m HEAD@{23}: commit: Update Style
+[33mec646d1[m HEAD@{24}: commit: Update Style
+[33mf7dbb97[m HEAD@{25}: commit: Update Media Style
+[33m9c567ff[m HEAD@{26}: commit: Make Responsive
+[33m46cdfb0[m HEAD@{27}: commit: Add Github Link
+[33m55d8c0b[m HEAD@{28}: commit: File Managment
+[33m4426e12[m HEAD@{29}: commit: Image Fixing
+[33m2fb335a[m HEAD@{30}: commit: Move Files to Root
+[33m76eff7c[m HEAD@{31}: commit (initial): Initial Commit
