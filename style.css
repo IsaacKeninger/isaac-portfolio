@@ -316,6 +316,15 @@ nav ul li a:hover::after {
   margin: -12px -16px -12px 0;
 }
 
+/* ── About Section ── */
+#About img,
+#projects img,
+#involvement img,
+#photography img,
+#contact img {
+  width: 150px;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 10px 5%;
