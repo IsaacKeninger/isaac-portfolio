@@ -104,11 +104,13 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+
 .header-text h1 {
   font-size: 44px;
   margin-top: 10px;
   line-height: 1.2;
 }
+
 .header-text {
   position: absolute;
   top: 20%;
@@ -147,8 +149,15 @@ nav ul li a:hover::after {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(10px); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 .hero-cards {
@@ -163,6 +172,7 @@ nav ul li a:hover::after {
 .hero-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4px;
   padding: 24px 20px;
   background: rgba(33, 34, 34, 0.08);
@@ -177,6 +187,14 @@ nav ul li a:hover::after {
 .hero-card:hover {
   background: rgba(33, 34, 34, 0.16);
   transform: translateY(-3px);
+}
+
+.hero-card-img {
+  width: 125px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .hero-card-label {
@@ -214,7 +232,7 @@ nav ul li a:hover::after {
   }
 
   .header-text {
-    margin-top: 30%;
+    margin-top: 0%;
     font-size: 22px;
   }
 
