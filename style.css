@@ -50,6 +50,29 @@ body {
   pointer-events: none;
 }
 
+.hero-green::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #282B28;
+  width: 5px;
+  pointer-events: none;
+  z-index: 2;
+}
+
 
 
 #header::before {
