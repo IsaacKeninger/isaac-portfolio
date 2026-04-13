@@ -134,6 +134,23 @@ nav ul li a:hover::after {
   color: #3E5641
 }
 
+.scroll-arrow {
+  position: absolute;
+  bottom: 32px;
+  left: 25%;
+  transform: translateX(-50%);
+  color: #212222;
+  font-size: 24px;
+  z-index: 2;
+  animation: bounce 1.8s infinite;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(10px); }
+}
+
 .hero-cards {
   position: absolute;
   bottom: 100px;
