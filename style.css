@@ -46,7 +46,7 @@ body {
   left: 0;
   width: 50%;
   height: 100%;
-  opacity: 1;
+  opacity: ;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 180px 180px;
@@ -132,6 +132,52 @@ nav ul li a:hover::after {
   position: relative;
   top: 16px;
   color: #3E5641
+}
+
+.hero-cards {
+  position: absolute;
+  bottom: 100px;
+  left: 2%;
+  display: flex;
+  gap: 14px;
+  z-index: 2;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 20px;
+  background: rgba(33, 34, 34, 0.08);
+  border: 1px solid rgba(33, 34, 34, 0.15);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #212222;
+  transition: background 0.25s ease, transform 0.25s ease;
+  min-width: 180px;
+}
+
+.hero-card:hover {
+  background: rgba(33, 34, 34, 0.16);
+  transform: translateY(-3px);
+}
+
+.hero-card-label {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-card-sub {
+  font-size: 12px;
+  opacity: 0.6;
+  letter-spacing: 0.03em;
+}
+
+.hero-card .fa-arrow-right {
+  font-size: 11px;
+  margin-top: 8px;
+  color: #d36135;
 }
 
 @media (max-width: 768px) {
