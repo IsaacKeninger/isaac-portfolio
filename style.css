@@ -94,7 +94,7 @@ body {
 }
 
 .logo {
-  width: 250px;
+  width: clamp(150px, 18vw, 250px);
   height: auto;
 }
 
@@ -120,7 +120,7 @@ nav ul li {
 nav ul li a {
   color: #d36135;
   text-decoration: none;
-  font-size: 12.5px;
+  font-size: clamp(10px, 1vw, 13px);
   font-weight: bold;
   position: relative;
 }
@@ -141,7 +141,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-  font-size: 44px;
+  font-size: clamp(22px, 3.5vw, 44px);
   margin-top: 10px;
   line-height: 1.2;
 }
@@ -152,9 +152,9 @@ nav ul li a:hover::after {
   left: 25%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 24px;
+  font-size: clamp(13px, 1.8vw, 24px);
   color: #212222;
-  width: 55%;
+  width: 50%;
   z-index: 2;
 }
 
@@ -164,20 +164,20 @@ nav ul li a:hover::after {
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: clamp(13px, 1.5vw, 13px);
   margin-top: 8px;
   position: relative;
-  top: 16px;
+  top: 1.5vh;
   color: #3E5641
 }
 
 .scroll-arrow {
   position: absolute;
-  bottom: 32px;
+  bottom: 3.5vh;
   left: 25%;
   transform: translateX(-50%);
   color: #212222;
-  font-size: 48px;
+  font-size: clamp(28px, 4vw, 48px);
   z-index: 2;
   animation: bounce 1.8s infinite;
   text-decoration: none;
@@ -197,8 +197,8 @@ nav ul li a:hover::after {
 
 .hero-wave {
   position: absolute;
-  bottom: 375px;
-  left: 2.5%;
+  bottom: 64%;
+  left: 2%;
   width: 45%;
   z-index: 2;
 }
@@ -223,30 +223,32 @@ nav ul li a:hover::after {
   50%       { stroke-dashoffset: 40; }
 }
 .projects-text {
-  position:absolute;
+  position: absolute;
   z-index: 2;
-  left: 75px;
-  top: 250px;
-  color: #A24936
+  left: 3.5%;
+  top: auto;
+  bottom: calc(16% + min(200px, 17vw) + 10px);
+  color: #A24936;
 }
 
 .left-image {
   position: absolute;
   z-index: 2;
-  left: 85px;
-  top: 300px;
-  width: 200px;
-  height: 200px;
+  left: 6%;
+  top: auto;
+  bottom: 16%;
+  width: min(200px, 17vw);
+  height: min(200px, 17vw);
   border-radius: 50%;
   overflow: hidden;
 }
 
 .projects-text-2 {
-  left: 335px;
+  left: calc(3.5% + min(200px, 17vw) + 4%);
 }
 
 .left-image-2 {
-  left: 360px;
+  left: calc(6% + min(200px, 17vw) + 4%);
 }
 
 .left-image img {
@@ -257,7 +259,7 @@ nav ul li a:hover::after {
 
 .hero-cards {
   position: absolute;
-  bottom: 120px;
+  bottom: 13vh;
   left: 2%;
   display: flex;
   flex-direction: column;
@@ -295,19 +297,19 @@ nav ul li a:hover::after {
 }
 
 .hero-card-label {
-  font-size: 14px;
+  font-size: clamp(11px, 1.1vw, 14px);
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
 .hero-card-sub {
-  font-size: 10px;
+  font-size: clamp(8px, 0.8vw, 10px);
   opacity: 0.6;
   letter-spacing: 0.03em;
 }
 
 .hero-card-img {
-  width: 140px;
+  width: clamp(80px, 10vw, 140px);
   height: 60px;
   object-fit: cover;
   border-radius: 0 10px 10px 0;
@@ -340,32 +342,10 @@ nav ul li a:hover::after {
     gap: 15px;
     margin-top: 10px;
   }
-
-  .header-text {
-    margin-top: 0%;
-    font-size: 22px;
-  }
-
-  .header-text h1 {
-    font-size: 36px;
-  }
 }
 
 @media (max-width: 480px) {
-  .header-text {
-    margin-top: 35%;
-    font-size: 18px;
-  }
-
-  .header-text h1 {
-    font-size: 28px;
-  }
-
   nav ul li a {
     font-size: 16px;
-  }
-
-  .logo {
-    width: 180px;
   }
 }
